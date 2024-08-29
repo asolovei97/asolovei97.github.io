@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lofi clock</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar" id="navbar">
+        <select name="modal-options" id="modal-options">
+          <option value="empty">Choose Lofi</option>
+          <hr />
+          <option class="show-modal" value="presets">Presets</option>
+          <option class="show-modal" value="youtube">Youtube</option>
+          <option class="show-modal" value="spotify">Spotify</option>
+          <option class="show-modal" value="your-own">Your own</option>
+        </select>
+        <h1>Lofi clock</h1>
+        <div class="switch" id="switch">
+          <label for="checkbox" class="theme-switch">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round"></div>
+          </label>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="clock-wrap">
+        <h1 class="clock" id="clock">00:00:00</h1>
+        <form action="/" id="url-form">
+          <input type="text" placeholder="URL" />
+          <button>Run</button>
+        </form>
+      </div>
+      <div class="background" id="background"></div>
+      <div class="player-wrap" id="player-wrap">
+        <img src="./assets/img/background.gif" alt="background" />
+      </div>
+    </main>
+  </body>
+  <script src="./script.js"></script>
+</html>
